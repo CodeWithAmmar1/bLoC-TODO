@@ -50,10 +50,12 @@ class TodoApp extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
+                      cursorColor: Colors.limeAccent,
                       controller: controller,
-                      decoration: InputDecoration(tex
+                      decoration: InputDecoration(
                         hintText: 'Enter a task',
-                        hintStyle: TextStyle(color: Colors.white),
+                        hintStyle: TextStyle(color: Colors.grey),
                         contentPadding: EdgeInsets.symmetric(
                           horizontal: 16,
                           vertical: 12,
@@ -107,6 +109,8 @@ class TodoApp extends StatelessWidget {
                                   todos[index].isDone
                                       ? TextDecoration.lineThrough
                                       : null,
+                              decorationColor: Colors.red,
+                              decorationThickness: 2.5,
                             ),
                           ),
                           leading: Checkbox(
