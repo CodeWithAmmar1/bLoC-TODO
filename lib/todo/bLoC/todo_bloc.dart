@@ -1,4 +1,4 @@
-import 'package:app/model/model.dart';
+import 'package:app/todo/model/model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'todo_event.dart';

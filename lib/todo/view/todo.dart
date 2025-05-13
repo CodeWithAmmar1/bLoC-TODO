@@ -1,24 +1,8 @@
-import 'package:app/model/model.dart';
-import 'package:app/todo_bloc.dart';
-import 'package:app/todo_event.dart';
+import 'package:app/todo/bLoC/todo_bloc.dart';
+import 'package:app/todo/bLoC/todo_event.dart';
+import 'package:app/todo/model/model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => TodoBloc(),
-      child: MaterialApp(debugShowCheckedModeBanner: false, home: TodoApp()),
-    );
-  }
-}
 
 class TodoApp extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
