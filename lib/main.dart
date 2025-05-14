@@ -2,7 +2,6 @@ import 'package:app/todo/bLoC/todo_bloc.dart';
 import 'package:app/todo/view/todo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 void main() {
   runApp(MyApp());
 }

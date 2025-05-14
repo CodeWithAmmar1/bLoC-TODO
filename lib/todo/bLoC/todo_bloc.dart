@@ -1,6 +1,5 @@
 import 'package:app/todo/model/model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'todo_event.dart';
 
 class TodoBloc extends Bloc<TodoEvent, List<Todo>> {

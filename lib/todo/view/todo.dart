@@ -6,7 +6,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TodoApp extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
-
   TodoApp({super.key});
 
   @override
